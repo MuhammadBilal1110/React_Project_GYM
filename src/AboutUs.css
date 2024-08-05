@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: red;
+    font-size: 25px;
+    
+}
+h1{
+    color: rgb(222, 215, 250);
+}
+p{
+    border-top: ;
+    color: whitesmoke;
+    padding: 16px;
+    margin: 12px;
+    font-weight: bold;
+}
