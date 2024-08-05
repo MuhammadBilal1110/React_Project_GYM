@@ -69,7 +69,7 @@ const styles = {
   pageContainer: {
     height: '100vh',
     margin: 0,
-    backgroundImage: 'url(/Login.jpg)', // Adjust the path as needed
+    // backgroundImage: 'url(/Login.jpg)', // Adjust the path as needed
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
