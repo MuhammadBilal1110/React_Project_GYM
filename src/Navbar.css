@@ -1,54 +1,63 @@
 /* Navbar.css */
 
 .navbar {
-    background-color: #343a40; /* Dark background */
-    padding: 0.5rem 1rem;
-  }
-  
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #e9ecef;
+}
+
+.navbar-nav .nav-link {
+  color: #f8f9fa;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #adb5bd;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(248, 249, 250, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dropdown-menu {
+  background-color: #495057;
+  border: none;
+}
+
+.dropdown-item {
+  color: #f8f9fa;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #343a40;
+  background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
   .navbar-brand {
-    color: #f8f9fa; /* Light text for brand */
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.2rem;
   }
-  
-  .navbar-brand:hover {
-    color: #e9ecef; /* Slightly lighter color on hover */
-  }
-  
+
   .navbar-nav .nav-link {
-    color: #f8f9fa; /* Light text for links */
-    font-size: 1.1rem;
-    margin-left: 1rem;
-    transition: color 0.2s;
+    font-size: 1rem;
+    margin-left: 0.5rem;
   }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link:focus {
-    color: #adb5bd; /* Slightly lighter color on hover or focus */
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(248, 249, 250, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  
-  .dropdown-menu {
-    background-color: #495057; /* Darker background for dropdown */
-    border: none;
-  }
-  
-  .dropdown-item {
-    color: #f8f9fa; /* Light text for dropdown items */
-    transition: background-color 0.2s, color 0.2s;
-  }
-  
-  .dropdown-item:hover,
-  .dropdown-item:focus {
-    color: #343a40; /* Dark text on hover or focus */
-    background-color: #e9ecef; /* Light background on hover or focus */
-  }
-  
-  
+}

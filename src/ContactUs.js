@@ -93,6 +93,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -114,9 +115,9 @@ const ContactUs = () => {
     container: {
       maxWidth: '400px',
       padding: '20px',
-      backgroundColor: 'transparent', // Remove background color
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black background
       borderRadius: '5px',
-      boxShadow: '0 2px 4px wheat', // Optional: Add shadow for better visibility
+      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.5)', // Optional: Add shadow for better visibility
     },
     h1: {
       textAlign: 'center',
@@ -131,7 +132,7 @@ const ContactUs = () => {
       width: '100%',
       padding: '10px',
       marginBottom: '20px',
-      border: '1px solid black',
+      border: '1px solid white',
       borderRadius: '3px',
       color: 'white', // Change input and textarea text color to white
       backgroundColor: 'transparent', // Transparent background for inputs
@@ -140,7 +141,7 @@ const ContactUs = () => {
       width: '100%',
       padding: '10px',
       marginBottom: '20px',
-      border: '1px solid black',
+      border: '1px solid white',
       borderRadius: '3px',
       color: 'white', // Change textarea text color to white
       backgroundColor: 'transparent', // Transparent background for textarea
@@ -174,7 +175,12 @@ const ContactUs = () => {
     localStorage.setItem('name', name);
     localStorage.setItem('email', email);
     localStorage.setItem('message', message);
-    // Perform form submission here
+    
+    // Display a success message or clear the form
+    alert('Message submitted successfully!');
+    setName('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
