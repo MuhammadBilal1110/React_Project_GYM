@@ -1,4 +1,4 @@
-/* Navbar.css */
+/* Navbar.css
 
 .navbar {
   background-color: #343a40;
@@ -60,4 +60,36 @@
     font-size: 1rem;
     margin-left: 0.5rem;
   }
+} */
+.navbar {
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+  display: flex; /* Flexbox layout for the navbar */
+  justify-content: space-between; /* Space between logo, centered text, and navigation links */
+  align-items: center; /* Vertically center items */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-text {
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 20px; /* Space between navigation links */
 }
