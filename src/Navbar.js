@@ -130,13 +130,13 @@ const Navbar = () => {
               <Link className="nav-link active" aria-current="page" to="/Home">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/AboutUs">AboutUs</Link>
+              <Link className="nav-link" to="/AboutUs">About Us</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/FitnessCalculator">FitnessCalculator</Link>
+              <Link className="nav-link" to="/FitnessCalculator">Fitness Calculator</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/ContactUs">ContactUs</Link>
+              <Link className="nav-link" to="/ContactUs">Contact Us</Link>
             </li>
           </ul>
         </div>
