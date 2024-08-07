@@ -1,5 +1,5 @@
 body {
-  background-color: gray; /* Gray background for the entire page */
+  background-color: white; /* Gray background for the entire page */
   margin: 0;
   padding: 0;
 }
@@ -8,13 +8,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ensure the container takes full viewport height */
+  height: calc(100vh - 56px); /* Ensure the container takes full viewport height minus the navbar height */
+  margin-top: 56px; /* Distance from the navbar */
 }
 
 .auth-box {
   width: 90%;
   max-width: 400px;
-  background-color: black; /* White background for the sign-up container */
+  background-color: black; /* Background color for the sign-up container */
   padding: 15px; /* Reduced padding for a more compact form */
   border-radius: 8px; /* Slightly reduced border radius */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduced box shadow for a lighter appearance */

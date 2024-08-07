@@ -18,32 +18,31 @@ p{
     font-weight: bold;
 } */
  /* AboutUs.css */
+ body {
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  font-size: 18px; /* Slightly larger font size for better readability */
+}
 
-body {
-    font-family: Arial, sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-decoration: none;
-    font-size: 25px;
-  }
-  
-  h1 {
-    color: rgb(222, 215, 250);
-  }
-  
+h1 {
+  color: rgb(222, 215, 250);
+}
+
+p {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: whitesmoke;
+  padding: 16px;
+  margin: 12px;
+  font-weight: bold;
+  font-size: 1.125rem; /* Larger font size for paragraphs */
+}
+
+@media (max-width: 768px) {
   p {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    color: whitesmoke;
-    padding: 16px;
-    margin: 12px;
-    font-weight: bold;
+    font-size: 1rem; /* Adjusted font size for mobile devices */
+    padding: 10px;
+    margin: 8px;
   }
-  
-  @media (max-width: 768px) {
-    p {
-      font-size: 18px;
-      padding: 10px;
-      margin: 8px;
-    }
-  }
-  
+}
