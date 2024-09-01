@@ -1,0 +1,104 @@
+ 
+ .category-page {
+  padding: 20px;
+  background: linear-gradient(to right, gray, gray);
+}
+
+.category-page h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center; /* Center-align heading */
+}
+
+/* Styles for Category Cards */
+.category-card {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  margin: 10px; /* Add margin for spacing */
+}
+
+/* Hover effects for category card */
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.category-image {
+  width: 100%;
+  height: 250px; /* Increased height */
+  object-fit: cover;
+  border-bottom: 3px solid #007bff;
+  transition: transform 0.3s;
+}
+
+/* Hover effect for category image */
+.category-card:hover .category-image {
+  transform: scale(1.1);
+}
+
+.category-info {
+  padding: 15px;
+  background-color: #f8f9fa;
+  width: 100%;
+}
+
+/* Text styles in the category info */
+.category-info h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-page {
+    padding: 10px;
+  }
+
+  .category-page h1 {
+    font-size: 2rem;
+  }
+
+  .category-card {
+    margin: 5px; /* Reduce margin on smaller screens */
+  }
+
+  .category-info h4 {
+    font-size: 1.25rem; /* Smaller font size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-page {
+    padding: 5px;
+  }
+
+  .category-page h1 {
+    font-size: 1.75rem;
+  }
+
+  .category-card {
+    margin: 2px; /* Further reduce margin on extra small screens */
+  }
+
+  .category-image {
+    height: 200px; /* Adjust image height for smaller screens */
+  }
+
+  .category-info h4 {
+    font-size: 1rem; /* Further reduce font size for smaller screens */
+  }
+}
